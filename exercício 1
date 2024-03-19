@@ -1,0 +1,24 @@
+function ex1(){
+function lerValor() {
+    let valor = parseFloat(prompt("Digite um valor:"));
+    while (valor <= 0) {
+        valor = parseFloat(prompt("O valor não pode ser zero ou negativo. Digite um novo valor:"));
+    }
+    return valor;
+}
+
+function dividirValores(valor1, valor2) {
+    return valor1 / valor2;
+}
+
+let valor1 = lerValor();
+let valor2 = lerValor();
+
+while (valor2 <= 0) {
+    valor2 = lerValor();
+}
+
+let resultado = dividirValores(valor1, valor2);
+alert("O resultado da divisão é: " + resultado);
+
+}
