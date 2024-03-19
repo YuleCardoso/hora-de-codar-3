@@ -1,0 +1,8 @@
+let N = parseInt(prompt("Digite um número para N: "));
+
+    for (let i = 1; i <= N; i++) {
+        document.write("<br>" + "Tabuada do ", i + ":" + "<br>");
+        for (let j = 1; j <= 10; j++) {
+            document.write(i + " x " + j + " = " + (i * j) + "<br>");
+        }
+        document.write();
