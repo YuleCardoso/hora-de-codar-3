@@ -1,0 +1,16 @@
+let soma = 0;
+
+for (let i = 0; i < 6; i++) {
+    let nota;
+    do {
+        nota = parseFloat(prompt("Digite a nota " + (i + 1) + ": "));
+    } while (nota < 0 || nota > 10 || isNaN(nota));
+
+    soma += nota;
+}
+
+let media = soma / 6;
+media = parseInt(media * 100) / 100;
+alert("A média do aluno é: " + media);
+
+}
