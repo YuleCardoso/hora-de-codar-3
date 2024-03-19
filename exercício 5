@@ -1,0 +1,19 @@
+let primeiroNumero = parseInt(prompt("Digite o primeiro número inteiro:"));
+let segundoNumero = parseInt(prompt("Digite o segundo número inteiro (maior que o primeiro):"));
+
+if (primeiroNumero >= segundoNumero) {
+    alert("O primeiro número deve ser menor que o segundo número.");
+} else {
+    let soma = primeiroNumero + segundoNumero;
+    let contador = 2;
+
+
+    for (let i = primeiroNumero + 1; i < segundoNumero; i++) {
+        soma += i; 
+        contador++; 
+    }
+
+    let media = soma / contador;
+
+    alert("A média aritmética dos números entre " + primeiroNumero + " e " + segundoNumero + " é: " + media);
+    }
