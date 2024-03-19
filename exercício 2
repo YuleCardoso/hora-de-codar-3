@@ -1,0 +1,12 @@
+function bombaRelogio() {
+    let segundos = 30;
+    while (segundos >= 0) {
+        document.write(segundos + "<br>");
+        segundos--;
+    }
+    document.write("EXPLOSÃO");
+}
+
+bombaRelogio();
+
+}
